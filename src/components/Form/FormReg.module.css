@@ -1,0 +1,232 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.area input[type="text"] {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--white, #fff);
+  padding: 1rem;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+}
+
+.area input[type="text"]::placeholder {
+  color: var(--txt-white, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  width: 100%;
+}
+
+.area_actions {
+  border-radius: var(--radius-small, 6px);
+  background: var(--white, #fff);
+  color: var(--txt-black, #282828);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-top: 6px;
+  padding: 16px 32px;
+  width: 100%;
+}
+.area_actions button {
+  border: none;
+}
+/* @media (max-width: 1400px) {
+  .area input[type="text"],
+  .area_actions {
+    width: 97%;
+  }
+} */
+
+/* @media (max-width: 1200px) {
+  .area input[type="text"],
+  .area_actions {
+    width: 96%;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(508px, 1fr));
+  }
+} */
+/* @media (max-width: 1060px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  }
+}
+
+@media (max-width: 1030px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  }
+} */
+
+/* @media (max-width: 1000px) {
+  .area input[type="text"],
+  .area_actions {
+    width: 96%;
+  }
+}
+
+@media (max-width: 980px) {
+  .area input[type="text"],
+  .area_actions {
+    width: 94%;
+  }
+}
+@media (max-width: 960px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  }
+}
+
+@media (max-width: 890px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+
+@media (max-width: 790px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+  }
+}
+
+@media (max-width: 750px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
+
+@media (max-width: 610px) {
+  .registration {
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}  */
+
+ /* @media (max-width: 1400px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        width: 95%;
+}}
+
+@media (max-width: 1250px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+        transform: translateX(-40px);
+        width: 103%;
+        margin-top: 10px;
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        transform: translateX(-40px);
+        width: 103%;
+}}
+
+@media (max-width: 1200px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+        transform: translateX(-30px);
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        transform: translateX(-30px);
+        width: 100%;
+}}
+
+@media (max-width: 1150px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+        transform: translateX(-50px);
+        width: 105%;
+        margin-top: 10px;
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        transform: translateX(-50px);
+        width: 105%;
+}}
+
+@media (max-width: 1000px){
+    .registration{
+        width: 44vw;
+    }
+    .area input[type="text"]{
+        transform: translateX(-25px);
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        transform: translateX(-25px);     
+}   
+}
+@media (max-width: 770px){
+    .registration{
+        width: 48vw;
+        padding-right: 20px;
+    }}
+
+@media (max-width: 700px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+    }
+
+    .area_actions{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        width: 110%;
+}}
+
+@media (max-width: 480px){
+    .area input[type="text"]{
+        margin-bottom: 10px;
+    }
+    .registration{
+        width: 70vw;
+    }
+} */

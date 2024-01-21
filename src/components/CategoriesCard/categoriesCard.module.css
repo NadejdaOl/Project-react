@@ -1,0 +1,96 @@
+.card p {
+  color: var(--txt-black, #282828);
+  text-align: center;
+  font-size: clamp(1.125rem, 0.8333rem + 8.3333vw, 1.25rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 22vw;
+  height: 28vh;
+  object-fit: cover;
+  margin-top: 2.5rem;
+  border-radius: var(--radius-big, 12px);
+  background: lightgray 50% / cover no-repeat;
+}
+
+.darkTheme p {
+  color: #fff;
+}
+
+@media (max-width: 1355px) {
+  .card img {
+    width: 22vw;
+    height: 24vh;
+  }
+}
+
+@media (max-width: 1255px) {
+  .card img {
+    width: 22vw;
+    height: 22vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card img {
+    width: 22.5vw;
+    height: 18.7vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .card img {
+    width: 23vw;
+    height: 17vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card img {
+    width: 44vw;
+    height: 17vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .card img {
+    width: 45vw;
+    height: 19vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .card img {
+    width: 44vw;
+    height: 19vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    width: 44vw;
+    height: 16.5vh;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card img {
+    width: 85vw;
+    height: 16.5vh;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card img {
+    width: 88.1vw;
+    height: 15.5vh;
+    margin-top: 24px;
+  }
+}

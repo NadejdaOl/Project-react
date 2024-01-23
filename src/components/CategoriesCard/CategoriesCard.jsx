@@ -10,10 +10,9 @@ const CategoriesCard = ({ title, image }) => {
 
   return (
     <div
-      className={`${classes.card} ${theme === "dark" ? classes.darkTheme : ""}`}
-    >
-      <img src={imageUrl} alt={title} />
-      <p>{title}</p>
+      className={`${classes.card} ${theme === "dark" ? classes.darkTheme : ""}`}>
+         <img src={imageUrl} alt={title} />
+        <p>{title}</p>
     </div>
   );
 };

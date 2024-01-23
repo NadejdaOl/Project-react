@@ -18,136 +18,80 @@ h2 {
   line-height: 110%;
   margin-top: 80px;
   position: relative;
-  /* margin-left: 40px; */
 }
+
 .changeCategory {
   width: 71%;
 }
+
 .linie {
   height: 1px;
-  width: clamp(1.5rem, -116.0417rem + 3358.3333vw, 51.875rem);
+  width: 100%;
   background-color: #ddd;
-  margin-left: 32px;
 }
 
 .allCategoriesBtn {
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #ddd);
   padding: 8px 16px;
-  color: var(--txt-grey, #8b8b8b);
   font-size: clamp(0.875rem, 0.5833rem + 8.3333vw, 1rem);
   font-style: normal;
   font-weight: 500;
   line-height: 126%;
   white-space: nowrap;
+  transition: transform 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.allCategoriesBtn{
+  color: var(--txt-grey, #8B8B8B);
+}
+
+.allCategoriesBtn a{
+  color: var(--txt-grey, #8b8b8b);
+}
+
+.allCategoriesBtn:hover {
+  transform: scale(1.05);
+  color:  #282828;
 }
 
 .darkFontColor h2 {
   color: #fff;
 }
-@media (max-width: 1405px) {
-  .changeCategory {
-    width: 70%;
-  }
-}
 
-@media (max-width: 1350px) {
-  .changeCategory {
-    width: 68%;
-  }
-}
-@media (max-width: 1300px) {
-  .changeCategory {
-    width: 67%;
-  }
-}
 
-@media (max-width: 1250px) {
-  .changeCategory {
-    width: 65%;
-  }
-}
-
-@media (max-width: 1150px) {
-  .changeCategory {
-    width: 63%;
-  }
-}
 
 @media (max-width: 1050px) {
-  .changeCategory {
-    width: 58%;
-  }
-
   h2 {
     margin-top: 60px;
   }
 }
 
-@media (max-width: 950px) {
-  .changeCategory {
-    width: 55%;
-  }
-}
-
-@media (max-width: 900px) {
-  .changeCategory {
-    width: 53%;
-  }
-}
-
-@media (max-width: 860px) {
-  .changeCategory {
-    width: 49%;
-  }
-}
 
 @media (max-width: 800px) {
-  .changeCategory {
-    width: 52%;
-  }
-
+  
   .nextCategories h2 {
     font-size: 56px;
   }
 }
-@media (max-width: 760px) {
-  .changeCategory {
-    width: 48%;
-  }
-}
 
-@media (max-width: 700px) {
-  .changeCategory {
-    width: 43%;
-  }
-}
 
 @media (max-width: 650px) {
-  .changeCategory {
-    width: 47%;
-  }
-
+  
   .nextCategories h2 {
     font-size: 48px;
   }
 }
 
 @media (max-width: 600px) {
-  .changeCategory {
-    width: 43%;
-  }
-
+ 
   .nextCategories h2 {
     font-size: 48px;
   }
 }
 
 @media (max-width: 550px) {
-  .changeCategory {
-    width: 10%;
-  }
-
+  
   .nextCategories h2 {
     font-size: 48px;
   }

@@ -18,8 +18,7 @@
 .order {
   display: flex;
   align-items: center;
-  gap: 40px;
-  height: 22.5rem;
+  /* height: 22.5rem; */
 }
 
 .fotoOrder {
@@ -42,7 +41,7 @@
 @media (max-width: 768px){
   .fotoOrder img{
       object-fit: cover;
-      width: 170%;
+      width: 156%;
       transform: translateX(-183px);
     }}
 
@@ -58,7 +57,9 @@
       }
     .fotoOrder {
       width: 100%;
-    }  }
+    } 
+    
+  }
     
     
 

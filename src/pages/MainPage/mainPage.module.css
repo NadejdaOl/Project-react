@@ -1,10 +1,14 @@
 .main {
+  display: flex;
+  flex-direction: column;
   background: url(../../media/mainFon.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* margin-top: 20px; */
-  /* border-bottom: 1px solid var(--grey-divider, #ddd); */
+}
+
+ .promo_text {
+  padding-bottom: 13.12rem;
 }
 
 .promo_title {
@@ -31,6 +35,13 @@
   line-height: 130%;
   background: var(--green, #393);
   border-radius: var(--radius-small, 6px);
+  transition: transform 0.3s ease;
+}
+
+.promo_btn:hover {
+  transform: scale(1.05);
+  background-color:  var(--black, rgb(6, 93, 49));
+  color: var(--txt-white, #FFF);
 }
 
 .promo_btn a {

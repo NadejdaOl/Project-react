@@ -1,0 +1,113 @@
+.error_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.error_picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_picture img{
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.error_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75.7%;
+}
+
+.error_title h2{
+    color: var(--txt-black, #282828);
+    text-align: center;
+    font-size: clamp(2.5rem, 2rem + 2.2222vw, 4rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    padding-bottom: 16px; 
+}
+
+.error_title p{
+    font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+    color: var(--txt-grey, #8B8B8B);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    font-style: normal;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.btn_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56px;
+    margin-top: 32px;
+    margin-bottom: clamp(3.5rem, 3rem + 2.2222vw, 5rem);
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+    transition: transform 0.3s ease;
+}
+
+.btn_home:hover {
+    transform: scale(1.05);
+    background-color:  var(--black, rgb(6, 93, 49));
+    color: var(--txt-white, #FFF);
+  }
+
+.btn_home a{
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.darkTheme{
+    background-color: #333;
+  }
+
+.darkTheme h2,
+.darkTheme p{
+    color: #fff;
+ }
+
+@media (max-width: 768px){
+    .error_picture img{
+        height: 240px;
+}}
+
+
+@media (max-width: 480px){
+    .error_picture img{
+        height: 148px;
+    }
+
+    .btn_home{
+        padding: 12px 52px;
+    }
+}
+
+@media (max-width: 360px){
+    .error_picture img{
+        height: 117px;
+    }
+}

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 import { useTheme } from "../../context";
 import nav from "../../media/basket1.png";
 import newBasketImage from "../../media/basket2.png";
 import logo from "../../media/logo-garten.svg";
 import menuLight from "../../media/menu2.png";
-import moon from "../../media/moon-moon-svgrepo-com.svg";
+import moon from "../../media/sun-svgrepo-com.svg";
 import menuDark from "../../media/munu1.png";
-import sun from "../../media/sun-svgrepo-com.svg";
+import sun from "../../media/moon-moon-svgrepo-com.svg";
 import commonClasses from "../../styles/Common.module.css";
 import classes from "./Header.module.css";
 
@@ -29,15 +29,16 @@ const Header = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setOpen((prevState) => !prevState);
-  };
+    const toggleMenu = () => {
+     setOpen((prevState) => !prevState);
+   };
 
-  const menuClass = `${classes.header_nav} ${isOpen ? "active" : ""}`;
+   const menuClass = `${classes.header_nav} ${isOpen ? "active" : ""}`;
 
   return (
     <header className={`${classes.header} ${classes[theme]}`}>
       <div className={commonClasses.container}>
+        
         <div className={classes.header_row}>
           <div className={classes.header_logo}>
             <img src={logo} alt="logo" />
@@ -56,6 +57,7 @@ const Header = () => {
               </button>
 
               {isOpen && (
+                
                 <div className={classes.mobile_menu_content}>
                   <button className={classes.close_button} onClick={toggleMenu}>
                     &times;
@@ -67,27 +69,28 @@ const Header = () => {
                     }`}
                   >
                     <li>
-                      <Link to="/" onClick={toggleMenu}>
+                      <NavLink to="/" onClick={toggleMenu} exact>
                         Main Page
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/categories" onClick={toggleMenu}>
+                      <NavLink to="/categories" onClick={toggleMenu}>
                         Categories
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/products" onClick={toggleMenu}>
+                      <NavLink to="/products" onClick={toggleMenu}>
                         All products
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/sales" onClick={toggleMenu}>
+                      <NavLink to="/sales" onClick={toggleMenu}>
                         All sales
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
+               
               )}
             </div>
           )}
@@ -100,16 +103,24 @@ const Header = () => {
             >
               <ul className={classes.nav_list}>
                 <li className={classes.nav_list_item}>
-                  <Link to="/">Main Page</Link>
+                  <NavLink to="/" exact>
+                    Main Page
+                  </NavLink>
                 </li>
                 <li className={classes.nav_list_item}>
-                  <Link to="/categories">Categories</Link>
+                  <NavLink to="/categories">
+                    Categories
+                  </NavLink>
                 </li>
                 <li className={classes.nav_list_item}>
-                  <Link to="/products">All products</Link>
+                  <NavLink to="/products">
+                    All products
+                  </NavLink>
                 </li>
                 <li className={classes.nav_list_item}>
-                  <Link to="/sales">All sales</Link>
+                  <NavLink to="/sales">
+                    All sales
+                  </NavLink>
                 </li>
               </ul>
             </div>

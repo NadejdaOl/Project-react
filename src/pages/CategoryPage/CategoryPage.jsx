@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useTheme } from "../../context";
 
 import classes from "./categoryPage.module.css";
 import commonClasses from '../../styles/Common.module.css';

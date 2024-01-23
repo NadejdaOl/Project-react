@@ -4,7 +4,8 @@ import classes from "./ProductCard.module.css";
 
 const calculateDiscontPercentage = (price, discont_price) => {
   const percentage = ((price - discont_price) / price) * 100;
-  return Math.round(percentage);
+  return parseFloat(percentage.toFixed(1));
+  // return Math.round(percentage);
 };
 
 const truncateTitle = (title, maxLength) => {
@@ -14,38 +15,32 @@ const truncateTitle = (title, maxLength) => {
   return title;
 };
 
-const ProductCard = ({ title, image, price, discont_price }) => {
+const ProductCard = ({ title, image, discont_price, price}) => {
   const imageUrl = `http://127.0.0.1:3333${
     image.startsWith("/") ? "" : "/"
   }${image}`;
   const discontPercentage = calculateDiscontPercentage(price, discont_price);
-  const truncatedTitle = truncateTitle(title, 15);
+  const truncatedTitle = truncateTitle(title, 12);
   const { theme } = useTheme();
 
   return (
-    <div className={classes.productCard}>
+    <div className={`${classes.productCard} ${theme === "dark" ? classes.darkTheme : ""}`}>
       <div className={classes.salesFoto}>
         <img src={imageUrl} alt={title} />
-        <p>{discontPercentage}% OFF</p>
+        <p>{discontPercentage}% </p>
       </div>
 
-      <div
-        className={`${classes.productDesc} 
-        ${theme === "dark" ? classes.darkTheme : ""}`}
-      >
+      <div className={classes.productDesc}>
         <div className={classes.nameProduct}>
           <p>{truncatedTitle}</p>
         </div>
 
-        <div
-          className={`${classes.prices} 
-                    ${theme === "dark" ? classes.darkTheme : ""}`}
-        >
+        <div className={classes.prices}>
           <div className={classes.newPrice}>
-            <p>${price}</p>
+            <p>${discont_price}</p>
           </div>
           <div className={classes.discont}>
-            <p>${discont_price}</p>
+            <p>${price}</p>
           </div>
         </div>
       </div>

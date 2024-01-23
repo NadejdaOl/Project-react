@@ -1,9 +1,9 @@
-.ChoosesCategory{
+.AllSales{
     margin-top: 28px;
     border-top: 1px solid var(--grey-divider, #DDD);
 }
 
-.categoryPage h2{
+.sales_list h2{
     margin-top: 32px;
     font-size: clamp(2.5rem, 2rem + 2.2222vw, 4rem);
 }
@@ -14,7 +14,7 @@
     margin-top: 40px;
 }
 
-.btn_main, .btn_categories{
+.btn_main, .btn_categories, .btn_products, .btn_sales {
     text-align: center; 
     padding: 8px 16px;
     border-radius: var(--radius-small, 6px);
@@ -22,11 +22,12 @@
     transition: transform 0.3s ease;
 }
 
-.btn_main:hover, .btn_categories:hover {
+.btn_main:hover, .btn_categories:hover,
+ .btn_products:hover, .btn_sales:hover{
     transform: scale(1.05);
-  }
+ } 
 
-.btn_main a{
+.btn_main a, .btn_categories a, .btn_products a{
     color: var(--txt-grey, #8B8B8B);
     font-size: 16px;
     font-style: normal;
@@ -34,7 +35,7 @@
     line-height: 126%; 
 }
 
-.btn_categories a{
+.btn_sales a{
     color:  var(--txt-black, #282828);
 }
 
@@ -46,39 +47,4 @@
     vertical-align: middle;
     content: "";
     margin-top: 16px;
-}
-
-@media (max-width: 768px){
-    .categoryPage h2{
-        font-size: 56px;
-    }
-}
-
-@media (max-width: 600px){
-    .categoryPage h2{
-        margin-top: 33px;
-    }
-}
-
-@media (max-width: 500px){
-    .btn_main, .btn_categories{
-        display: none;
-    }
-    .categoryPage{
-        margin-top: -108px;
-        margin-bottom: -20px;
-    }
-    .categoryPage h2{
-        font-size: 48px;
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 400px){
-    .categoryPage h2{
-        font-size: 40px;
-    }
-    .categoryPage{
-        margin-bottom: 20px;
-    }
 }

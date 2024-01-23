@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "../../context";
 import commonClasses from "../../styles/Common.module.css";
 import classes from "./mainPage.module.css";
+import { Link } from "react-router-dom";
 
 import CategoriesAll from "../../components/CategoriesAll/CategoriesAll";
 import CategoriesTitle from "../../components/CategoriesTitle/CategoriesTitle";
@@ -10,6 +11,7 @@ import Product from "../../components/Product/Product";
 
 const MainPage = () => {
   const { theme } = useTheme();
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className={`${theme === "dark" ? classes.darkTheme : ""}`}>
@@ -23,10 +25,11 @@ const MainPage = () => {
             </div>
 
             <div className={classes.promo_btn}>
-              <a href="#!" className={classes.promo_btn}>
+              <Link to="/categories" className={classes.promo_btn}>
                 Check out
-              </a>
+              </Link>
             </div>
+            
           </div>
         </div>
       </section>

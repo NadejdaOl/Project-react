@@ -1,2 +1,15 @@
+.className{
+    border-radius: 50%;
 
+}
 
+.sliderContainer {
+    position: relative;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }

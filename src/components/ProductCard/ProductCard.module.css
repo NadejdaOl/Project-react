@@ -81,7 +81,7 @@
 
 .newPrice {
   color: var(--txt-black, #282828);
-  font-size: clamp(2.25rem, 2.1667rem + 0.3704vw, 2.5rem);
+  font-size: clamp(1.5rem, 1.25rem + 1.1111vw, 2.25rem);
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
@@ -92,7 +92,7 @@
 
 .discont {
   color: var(--txt-grey, #8b8b8b);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;

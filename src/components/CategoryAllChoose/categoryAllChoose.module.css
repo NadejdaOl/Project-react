@@ -1,15 +1,26 @@
 .categoryList{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-/* 
-@media (max-width: 1100px){
+.darkTheme {
+    background-color: #333;   
+}
+
+.darkTheme p, .darkTheme h1{
+   color: #fff;
+}
+
+@media (max-width: 470px){
     .categoryList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
     }
-} */
+}
 
 
 

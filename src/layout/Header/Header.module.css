@@ -227,13 +227,15 @@ body {
     padding-bottom: 32px;
   }
   .sunIcon {
-    margin-left: 70px;
+    margin-left: 80px;
   }
 
   .moonIcon {
-    margin-left: 70px;
+    margin-left: 80px;
   }
   .nav_basket {
     margin-left: 18px;
   }
+
+
 }

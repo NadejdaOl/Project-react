@@ -5,12 +5,12 @@ import classes from "./categoriesTitle.module.css";
 import { Link } from "react-router-dom";
 
 export const CategoriesTitle = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div
       className={`${classes.categoriesTitle} 
-                   ${theme === "dark" ? classes.darkFontColor : ""}`}
+      ${theme === "dark" ? classes.darkTheme : ""}`}
     >
       <div className={commonClasses.container}>
         <div className={classes.nextCategories}>

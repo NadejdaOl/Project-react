@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import classes from './categoryAllChoose.module.css';
 import commonClasses from '../../styles/Common.module.css';
 import CategoryChoose from "../CategoryChoose/CategoryChoose";
+import { useTheme } from "../../context";
 
 export const CategoryAllChoose = () => {
     const [categories, setCategories] = useState([])
+    const { theme } = useTheme();
 
     useEffect(() => {
         const url_base='http://127.0.0.1:3333/'
@@ -26,7 +28,7 @@ export const CategoryAllChoose = () => {
     }, []);
 
     return (
-        <div className={classes.categoriesAll}>
+        <div className={`${classes.categoriesAll} ${theme === "dark" ? classes.darkTheme : ""}`}>
             <div className={commonClasses.container}>
                 {categories.length > 0 ? (
                     <div className={classes.categoryList}>

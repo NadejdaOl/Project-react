@@ -5,7 +5,8 @@
   width: 100%;
   top: 0;
   z-index: 1000; 
-  border-bottom: 1px solid var(--grey-divider, #DDD)   
+  border-bottom: 1px solid var(--grey-divider, #DDD);
+  background-color: #ffffff;  
 }
 
 body {
@@ -78,11 +79,11 @@ body {
   color: #000000;
 }
 
-.dark {
+.darkTheme {
   background-color: #333333;
 }
 
-.dark a {
+.darkTheme a {
   color: #ffffff;
 }
 

@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
  
-  height: 422px;
+  height: 26.38rem;
   border: 1px solid var(--grey-divider, #ddd);
   border-radius: var(--radius-big,12px);
 
   margin-top: 40px;
-  margin-right: 32px;
+  margin-right: 32px; 
   margin-bottom: 35px;
 }
 
@@ -126,12 +126,6 @@
   } 
 }
 
-@media (max-width: 660px){
-  .newPrice{
-    font-size: 38px;
-  }  
-}
-
 @media (max-width: 480px) {
   .productCard  {
     height: 335px;
@@ -139,13 +133,13 @@
   .nameProduct p {
     font-size: 18px;
 }
-   .newPrice{
+   /* .newPrice{
     font-size: 36px;
-   }
+   } */
   .salesFoto {
     font-size: 18px;
   }
-  .discont{
+  .discount{
     font-size: 18px;
   }
   .prices {

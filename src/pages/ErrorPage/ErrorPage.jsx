@@ -7,7 +7,8 @@ import oops from '../../media/oops.svg';
 
 
 const ErrorPage = () => {
-  const { theme} = useTheme();
+  const { theme } = useTheme();
+  const error = useRouteError();
 
   return (
     <div className={`${classes.error_page}  ${theme === "dark" ? classes.darkTheme : ""}`}>

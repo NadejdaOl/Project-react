@@ -11,7 +11,8 @@
 .click_btn{
     display: flex;
     justify-content: flex-start;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-top: 20px;
 }
 
 .btn_main, .btn_categories, .btn_products {
@@ -46,3 +47,23 @@
     content: "";
     margin-top: 16px;
 }
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-direction: row;
+}
+
+.darkTheme {
+    background-color: #333;    
+}
+
+.darkTheme p,
+.darkTheme h2,
+.darkTheme .btn_products a{
+   color: #fff;
+}
+

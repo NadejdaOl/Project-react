@@ -1,0 +1,9 @@
+.productChoose {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 32px; */
+    justify-content: space-between;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+}

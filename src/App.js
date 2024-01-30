@@ -6,7 +6,7 @@ import { ThemeProvider } from "./context";
 
 function App() {
   return (
-    <ThemeProvider>
+    <ThemeProvider  initialTheme="light">
       <div className="App">
         <Header />
         <main>

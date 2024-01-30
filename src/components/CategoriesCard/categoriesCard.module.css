@@ -29,8 +29,8 @@
 }
 
 @media (max-width: 1000px) {
-  .card  {
-    height: 292px;
+  .card {
+    height:18.25rem ;
     padding-right: 20px;
   }
   .card img { 
@@ -40,7 +40,7 @@
 
 @media (max-width: 360px) {
   .card  {
-    height: 255px;
+    height: 15.94rem;
     padding-right: 0px;
   }
   .card img {
@@ -48,61 +48,4 @@
 }}
 
 
-/* @media (max-width: 1000px) {
-  .card img {
-    width: 22.5vw;
-    height: 18.7vh;
-  }
-}
 
-@media (max-width: 800px) {
-  .card img {
-    width: 23vw;
-    height: 17vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .card img {
-    width: 44vw;
-    height: 17vh;
-  }
-}
-
-@media (max-width: 700px) {
-  .card img {
-    width: 45vw;
-    height: 19vh;
-  }
-}
-
-@media (max-width: 550px) {
-  .card img {
-    width: 44vw;
-    height: 19vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .card img {
-    width: 44vw;
-    height: 16.5vh;
-    margin-top: 24px;
-  }
-}
-
-@media (max-width: 400px) {
-  .card img {
-    width: 85vw;
-    height: 16.5vh;
-    margin-top: 24px;
-  }
-}
-
-@media (max-width: 360px) {
-  .card img {
-    width: 88.1vw;
-    height: 15.5vh;
-    margin-top: 24px;
-  }
-} */

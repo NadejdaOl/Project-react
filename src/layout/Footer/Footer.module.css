@@ -1,6 +1,6 @@
-/* footer {
-  margin-bottom: 80px;
-} */
+footer {
+  padding-bottom: clamp(3.5rem, 3rem + 2.2222vw, 5rem);;
+}
 
 .contact {
   color: var(--txt-black, #282828);

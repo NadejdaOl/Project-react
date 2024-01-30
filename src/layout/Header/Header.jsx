@@ -36,7 +36,8 @@ const Header = () => {
    const menuClass = `${classes.header_nav} ${isOpen ? "active" : ""}`;
 
   return (
-    <header className={`${classes.header} ${classes[theme]}`}>
+    <header className={`${classes.header} ${theme === "dark" ? classes.darkTheme : ""}`}>
+      {/* {`${classes.header} ${classes[theme]}`}> */}
       <div className={commonClasses.container}>
         
         <div className={classes.header_row}>

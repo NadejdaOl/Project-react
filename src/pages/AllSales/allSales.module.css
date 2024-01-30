@@ -8,6 +8,14 @@
     font-size: clamp(2.5rem, 2rem + 2.2222vw, 4rem);
 }
 
+.product_sales{
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    justify-content: space-between;
+}
+
+
 .click_btn{
     display: flex;
     justify-content: flex-start;
@@ -47,4 +55,14 @@
     vertical-align: middle;
     content: "";
     margin-top: 16px;
+}
+
+.darkTheme {
+    background-color: #333;    
+}
+
+.darkTheme p,
+.darkTheme h2,
+.darkTheme .btn_sales a{
+   color: #fff;
 }
